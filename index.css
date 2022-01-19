@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: grid;
+    height:100vh;
+    background: rgb(205, 211, 200);
+    grid-template-columns: fr 1fr .1fr;
+    grid-template-rows: 1fr .5fr;
+    grid-template-areas: 
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+}
+/* Daniel's Div */
+.daniel{
+    grid-area: daniel;
+    background: linear-gradient(hsl(263, 55%, 52%), hsl(263, 55%, 52%) );
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-top: 150px;
+    border-radius: 10px;
+    color: #fff;
+    margin-left: 320px;
+    width: 700px;
+}
+
+.daniel .big{
+    font-size: 21px;
+    font-weight: 600;
+    padding: 10px;
+
+}
+.daniel .small{
+    font-size: 16px;
+    padding: 10px;
+    margin-top: -6px;
+    color: rgb(190, 185, 180);
+}
+.big{
+    font-size: 21px;
+    font-weight: 600;
+    padding: 10px;
+
+}
+.small{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 15px;
+    color: rgb(190, 185, 180);
+}
+.top{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.img{
+    border-radius: 50%;
+}
+.toptext{
+    margin-left: 80px;
+    margin-top: -50px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.text{
+    font-size: 15px;
+    font-weight: normal;
+}
+.jonathan{
+    background: hsl(217, 19%, 35%);
+    grid-area: jonathan;
+    height: 300px;
+    margin-top: 150px;
+    width: 290px;
+    color: #fff;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.kira{
+    background: hsl(0, 0%, 100%);
+    grid-area: kira;
+    height: 630px;
+    margin-top: 150px;
+    width: 290px;
+    color: #000000;
+    border-radius: 10px;
+    padding: 0;
+    margin-right: 290px;
+}
+.jeanette{
+    background: hsl(0, 0%, 100%);
+    grid-area: jeanette;
+    height: 300px;
+    margin-top: -150px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-left: 320px;
+    width: 290px;
+}
+.patrick{
+    background: hsl(219, 29%, 14%);
+    grid-area: patrick;
+    width: 100%;
+    color: #fff;
+    height: 300px;
+    margin-top: -150px;
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 705px;
+}
+
+@media only screen and (max-width:550px){
+    /* .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 1fr 2fr 2fr;
+        grid-template-areas: 
+        "daniel"
+        "jonathan"
+        "kira"
+        "jeanette"
+        "patrick";
+    } */
+}
+@media (max-width:500px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 40px;
+    }
+
+    .daniel{
+        margin: 100px;
+        padding: 20px;
+        width: 300px;
+        height: 740px;
+    }
+
+    .jonathan{
+        margin-left: 100px;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .kira{
+        margin-left: 100px;
+        width: 300px;
+        height: 700px;
+        color: #fff;
+        background: brown;
+        padding: 20px;
+    }
+
+    .jeanette{
+        margin-left: 100px;
+        height: 300px;
+        padding: 20px;
+        background: cornflowerblue;
+        margin-top: 60px;
+    }
+
+    .patrick{
+        width: 300px;
+        height: 700px;
+        margin-top: 60px;
+        padding: 20px;
+        margin-left: 100px;
+    }
+
+    .small{
+        color: #ffffff;
+    }
+
+    .daniel .small{
+        color: #fff;
+    }
+}
+
+@media (max-width:480px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 40px;
+    }
+
+    .daniel{
+        margin: 100px;
+        padding: 20px;
+        width: 300px;
+        height: 740px;
+    }
+
+    .jonathan{
+        margin-left: 100px;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .kira{
+        margin-left: 100px;
+        width: 300px;
+        height: 700px;
+        color: #fff;
+        background: brown;
+        padding: 20px;
+    }
+
+    .jeanette{
+        margin-left: 100px;
+        height: 300px;
+        padding: 20px;
+        background: cornflowerblue;
+        margin-top: 60px;
+    }
+
+    .patrick{
+        width: 300px;
+        height: 700px;
+        margin-top: 60px;
+        padding: 20px;
+        margin-left: 100px;
+    }
+
+    .small{
+        color: #ffffff;
+    }
+
+    .daniel .small{
+        color: #fff;
+    }
+}
